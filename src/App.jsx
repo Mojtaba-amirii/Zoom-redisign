@@ -112,7 +112,7 @@ function App() {
             Explore Industry Solutions
           </a>
         </section>
-        <section className="grid grid-cols-2 gap-2 fonst-bold m-4">
+        <section className="grid grid-cols-2 gap-2 font-xs font-bold md:font-base m-4">
           {cards.map((card, index) => {
             return <Card key={index} icon={card.icon} title={card.title} />;
           })}
