@@ -1,6 +1,6 @@
-import { RxHamburgerMenu } from "react-icons/rx";
 import { FaGraduationCap } from "react-icons/fa";
 import { AiFillDollarCircle } from "react-icons/ai";
+import Card from "./components/Card";
 
 const cards = [
   { icon: <FaGraduationCap />, title: "Education" },
@@ -10,56 +10,18 @@ const cards = [
   { icon: <FaGraduationCap />, title: "Healthcare" },
   { icon: <FaGraduationCap />, title: "Healthcare" },
 ];
-const HmMenu = [{ icon: <RxHamburgerMenu />, title: "HAMBURGER" }];
-
-import Card from "./Card";
+// const HmMenu = [{ icon: <RxHamburgerMenu />, title: "HAMBURGER" }];
 
 function App() {
   return (
-    <div className="flex flex-col items-center  w-full">
-      <nav className="flex justify-between items-center text-2xl p-3 w-full">
-        <div className="flex item-center gap-6 w-2/3">
-          <img src="/Zoom_logo.svg"></img>
-          <div>
-            <ul className="hidden lg:flex items-center text-base gap-5 ">
-              <li className=" text-gray-500 hover:text-blue-900">Products</li>
-              <li className=" text-gray-500 hover:text-blue-900">Solutions</li>
-              <li className=" text-gray-500 hover:text-blue-900">Resources</li>
-              <li className=" text-gray-500 hover:text-blue-900">
-                Plans & Pricing
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex items-center md:hidden">
-          <ul className="flex gap-3 ">
-            <li className=" text-blue-700 hover:text-blue-900">Join</li>
-            <li className=" text-blue-700 hover:text-blue-900">Host</li>
-          </ul>
-          <div className=" mx-3 text-blue-300">
-            <RxHamburgerMenu />
-          </div>
-        </div>
-        <div className="hidden md:flex gap-2 items-center">
-          <button className=" text-blue-600 border border-blue-400 rounded-2xl text-base p-2">
-            Contact Sales
-          </button>
-          <button className=" text-blue-600 border border-blue-400 rounded-2xl text-base p-2">
-            Sign Up Free
-          </button>
-          <div className="hidden md:block lg:hidden mx-3 text-blue-300">
-            <RxHamburgerMenu />
-          </div>
-        </div>
-      </nav>
-
-      <div className="flex flex-col md:flex-row m-10 p-10 pb-0 mb-0">
-        <section className="w-2/3">
+    <div className="flex flex-col items-center w-11/12 mx-auto my-12 gap-16">
+      <div className="flex flex-col md:flex-row">
+        <section className="w-2/3 flex flex-col justify-center">
           <h1 className="text-xl font-bold pt-8 p-2">
             One platform to innovate
           </h1>
           <p className="pt-8 p-2">
-            Bring teams togather, reimagine workplaces, engage <br />
+            Bring teams together, re imagine workplaces, engage <br />
             new audiences, and delight your costumers - all <br /> on the Zoom
             platform you know and love.
           </p>
@@ -72,18 +34,18 @@ function App() {
             </button>
           </div>
         </section>
-        <section className="w-auto h-auto">
+        <section className=" w-[65rem] h-auto">
           <img className="border rounded-2xl " src="/woman-desk.jpg" />
         </section>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center  bg-blue-800 mt-0">
+      <div className="flex flex-col md:flex-row items-center  bg-blue-800 mt-4  rounded-2xl p-6">
         <section>
-          <img src="/zoom_wheel_big.png" />
+          <img src="/zoom_wheel_big.png" alt="zoom-image" />
         </section>
         <section className="text-blue-300">
-          <h1 className="p-3">Make work less work</h1>
-          <p className="p-3">
+          <h1 className=" font-semibold text-2xl p-3">Make work, less work</h1>
+          <p className="text-xl p-3">
             Securely connect and collaborate so you can work better together.
             Simple to manage and delightful to use, Zoom powers the modern
             workforce.
@@ -94,12 +56,12 @@ function App() {
         </section>
       </div>
 
-      <div className="flex flex-row font-open-sans m-4">
-        <section>
+      <div className="flex flex-row font-open-sans w-full">
+        <section className=" w-3/5">
           <h1 className="text-xl font-bold pt-8 p-2">
             Powering organizations across industries and geographies
           </h1>
-          <p className="font-semibold pt-8 p-2 pb-10">
+          <p className="font-semibold px-2 py-8">
             Zoom helps consolidate communications, connect people,
             <br /> and collaborate better together in the boardroom, classroom,
             <br /> operating room, and everywhere in between.
@@ -112,7 +74,7 @@ function App() {
             Explore Industry Solutions
           </a>
         </section>
-        <section className="grid grid-cols-2 gap-2 font-xs font-bold md:font-base m-4">
+        <section className="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-2 font-xs font-bold md:font-base text-center ">
           {cards.map((card, index) => {
             return <Card key={index} icon={card.icon} title={card.title} />;
           })}
