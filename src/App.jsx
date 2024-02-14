@@ -17,15 +17,13 @@ function App() {
     <div className="flex flex-col items-center w-11/12 mx-auto my-12 gap-16">
       <div className="flex flex-col md:flex-row">
         <section className="w-2/3 flex flex-col justify-center">
-          <h1 className="text-xl font-bold pt-8 p-2">
-            One platform to innovate
-          </h1>
-          <p className="pt-8 p-2">
+          <h1 className="text-xl font-bold  p-2">One platform to innovate</h1>
+          <p className="p-2">
             Bring teams together, re imagine workplaces, engage <br />
             new audiences, and delight your costumers - all <br /> on the Zoom
             platform you know and love.
           </p>
-          <div className="flex gap-3 pt-8 p-2">
+          <div className="flex gap-3 p-2">
             <button className=" text-white bg-blue-600 border border-blue-600 rounded-2xl text-base p-2">
               Plans & Pricing
             </button>
@@ -34,7 +32,7 @@ function App() {
             </button>
           </div>
         </section>
-        <section className=" w-[65rem] h-auto">
+        <section className=" w-[100%] h-auto">
           <img className="border rounded-2xl " src="/woman-desk.jpg" />
         </section>
       </div>
@@ -56,23 +54,24 @@ function App() {
         </section>
       </div>
 
-      <div className="flex flex-row font-open-sans w-full">
-        <section className=" w-3/5">
-          <h1 className="text-xl font-bold pt-8 p-2">
+      <div className="flex flex-col sm:flex-row justify-between font-open-sans w-full">
+        <section className=" flex flex-col align-items-center align-middle justify-content-center text-center gap-3 mb-4">
+          <h1 className="text-xl font-bold">
             Powering organizations across industries and geographies
           </h1>
-          <p className="font-semibold px-2 py-8">
+          <p className="font-semibold">
             Zoom helps consolidate communications, connect people,
             <br /> and collaborate better together in the boardroom, classroom,
             <br /> operating room, and everywhere in between.
           </p>
-          <a
+          <button
+            type="button"
             href=""
             target="_blank"
             className="font-bold  text-blue-300 bg-blue-600 border border-blue-600 rounded-2xl text-base p-2"
           >
             Explore Industry Solutions
-          </a>
+          </button>
         </section>
         <section className="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-2 font-xs font-bold md:font-base text-center ">
           {cards.map((card, index) => {
