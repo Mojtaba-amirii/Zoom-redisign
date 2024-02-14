@@ -55,7 +55,7 @@ function App() {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-between font-open-sans w-full">
-        <section className=" flex flex-col align-items-center align-middle justify-content-center text-center gap-3 mb-4">
+        <section className="flex flex-col justify-center align-middle gap-4 mb-4">
           <h1 className="text-xl font-bold">
             Powering organizations across industries and geographies
           </h1>
