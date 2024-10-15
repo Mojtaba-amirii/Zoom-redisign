@@ -4,13 +4,15 @@ export default function Navigation() {
   return (
     <nav className="flex justify-between items-center text-2xl p-6 w-full">
       <div className="flex item-center gap-6 w-2/3">
+      <a href="./" className=" cursor-pointer" >      
         <img src="/Zoom_logo.svg" alt="zoom-logo" />
+      </a>
         <div>
           <ul className="hidden lg:flex items-center text-base gap-5 ">
-            <li className=" text-gray-500 hover:text-blue-900">Products</li>
-            <li className=" text-gray-500 hover:text-blue-900">Solutions</li>
-            <li className=" text-gray-500 hover:text-blue-900">Resources</li>
-            <li className=" text-gray-500 hover:text-blue-900">
+            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">Products</li>
+            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">Solutions</li>
+            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">Resources</li>
+            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">
               Plans & Pricing
             </li>
           </ul>
@@ -28,13 +30,13 @@ export default function Navigation() {
       <div className="hidden md:flex gap-2 items-center">
         <button
           type="button"
-          className=" text-blue-600 border border-blue-400 rounded-2xl text-base p-2 whitespace-nowrap"
+          className=" text-blue-600 border border-blue-400 rounded-2xl text-base py-2 px-4 whitespace-nowrap hover:bg-blue-600 hover:text-white"
         >
           Contact Sales
         </button>
         <button
           type="button"
-          className=" text-blue-600 border border-blue-400 rounded-2xl text-base p-2 whitespace-nowrap"
+          className=" text-blue-600 border border-blue-400 rounded-2xl text-base py-2 px-4 whitespace-nowrap hover:bg-blue-600 hover:text-white"
         >
           Sign Up Free
         </button>
