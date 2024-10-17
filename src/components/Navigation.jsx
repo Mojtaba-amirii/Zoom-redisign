@@ -2,22 +2,28 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navigation() {
   return (
-    <nav className="flex justify-between items-center text-2xl p-6 w-full">
-      <div className="flex item-center gap-6 w-2/3">
-      <a href="./" className=" cursor-pointer" >      
-        <img src="/Zoom_logo.svg" alt="zoom-logo" />
-      </a>
+    <header className="flex justify-between items-center text-2xl px-2 py-4 sm:p-6 w-full">
+      <nav className="flex item-center gap-6 w-2/3">
+        <a href="./" className=" cursor-pointer">
+          <img src="/Zoom_logo.svg" alt="zoom-logo" />
+        </a>
         <div>
           <ul className="hidden lg:flex items-center text-base gap-5 ">
-            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">Products</li>
-            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">Solutions</li>
-            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">Resources</li>
+            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">
+              Products
+            </li>
+            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">
+              Solutions
+            </li>
+            <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">
+              Resources
+            </li>
             <li className=" text-gray-500 hover:text-blue-900 cursor-pointer">
               Plans & Pricing
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
       <div className="flex items-center md:hidden">
         <ul className="flex gap-3 ">
           <li className=" text-blue-700 hover:text-blue-900">Join</li>
@@ -41,6 +47,6 @@ export default function Navigation() {
           Sign Up Free
         </button>
       </div>
-    </nav>
+    </header>
   );
 }
