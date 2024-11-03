@@ -16,7 +16,7 @@ const cards = [
 
 function App() {
   return (
-    <section className="flex flex-col items-center w-11/12 mx-auto my-4 sm:my-24 gap-y-8 sm:gap-y-24">
+    <section className="flex flex-col items-center w-11/12 mx-auto my-4 sm:my-36 gap-y-8 sm:gap-y-40">
       <div className="flex flex-col md:flex-row gap-y-4 justify-between sm:gap-y-0">
         <div className=" flex flex-col justify-center sm:w-1/2">
           <h1 className="text-xl font-bold  p-2">One platform to innovate</h1>
@@ -40,20 +40,20 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="sm:w-1/2">
+        <div className="sm:w-1/2 overflow-hidden rounded-2xl">
           <img
-            className=" w-full h-auto border rounded-2xl  "
+            className=" w-full h-auto border hover:scale-125 transition-all duration-700 ease-in-out"
             src="/woman-desk.jpg"
             alt="zoom-image"
           />
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center bg-blue-800 mt-4 rounded-2xl p-6">
+      <div className="flex flex-col md:flex-row items-center bg-blue-800 rounded-2xl p-6">
         <div>
           <img src="/zoom_wheel_big.png" alt="zoom-image" />
         </div>
-        <div className="text-blue-300">
+        <div className="text-blue-300 h-fit">
           <h1 className=" font-semibold text-2xl p-3">Make work, less work</h1>
           <p className="text-xl p-3">
             Securely connect and collaborate so you can work better together.
