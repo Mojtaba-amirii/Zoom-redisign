@@ -36,7 +36,7 @@ function App() {
               type="button"
               className=" w-fit text-blue-600 border border-blue-600 rounded-2xl text-base py-2 px-4 hover:shadow-lg hover:shadow-blue-500"
             >
-              Sign Up, It's Free
+              Sign Up, It&apos;s Free
             </button>
           </div>
         </div>
