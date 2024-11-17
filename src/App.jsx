@@ -1,101 +1,127 @@
-import { FaGraduationCap } from "react-icons/fa";
-import { AiFillDollarCircle } from "react-icons/ai";
-import { GiHealthNormal, GiPriceTag } from "react-icons/gi";
-import { MdOutlinePrecisionManufacturing } from "react-icons/md";
+import {
+  FaGraduationCap,
+  FaChartLine,
+  FaLandmark,
+  FaHospital,
+  FaIndustry,
+  FaShoppingCart,
+} from "react-icons/fa";
 import Card from "./components/Card";
 
-const cards = [
-  { icon: <FaGraduationCap />, title: "Education" },
-  { icon: <AiFillDollarCircle />, title: "Financial Services" },
-  { icon: <FaGraduationCap />, title: "Government" },
-  { icon: <GiHealthNormal />, title: "Healthcare" },
-  { icon: <MdOutlinePrecisionManufacturing />, title: "Manufacturing" },
-  { icon: <GiPriceTag />, title: "Retail" },
+const industryCards = [
+  { icon: <FaGraduationCap className="h-8 w-8" />, title: "Education" },
+  { icon: <FaChartLine className="h-8 w-8" />, title: "Financial Services" },
+  { icon: <FaLandmark className="h-8 w-8" />, title: "Government" },
+  { icon: <FaHospital className="h-8 w-8" />, title: "Healthcare" },
+  { icon: <FaIndustry className="h-8 w-8" />, title: "Manufacturing" },
+  { icon: <FaShoppingCart className="h-8 w-8" />, title: "Retail" },
 ];
-// const HmMenu = [{ icon: <RxHamburgerMenu />, title: "HAMBURGER" }];
 
-function App() {
+export default function App() {
   return (
-    <section className="flex flex-col items-center w-11/12 mx-auto my-4 sm:my-36 gap-y-8 sm:gap-y-40">
-      <div className="flex flex-col md:flex-row gap-y-4 justify-between sm:gap-y-0">
-        <div className=" flex flex-col justify-center sm:w-1/2">
-          <h1 className="text-xl font-bold  p-2">One platform to innovate</h1>
-          <p className="p-2">
-            Bring teams together, re imagine workplaces, engage <br />
-            new audiences, and delight your costumers - all <br /> on the Zoom
-            platform you know and love.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center gap-3 p-2">
-            <button
-              type="button"
-              className=" w-fit text-white bg-blue-600 border border-blue-600 rounded-2xl text-base py-2 px-4 hover:shadow-lg hover:shadow-blue-500"
-            >
-              Plans & Pricing
-            </button>
-            <button
-              type="button"
-              className=" w-fit text-blue-600 border border-blue-600 rounded-2xl text-base py-2 px-4 hover:shadow-lg hover:shadow-blue-500"
-            >
-              Sign Up, It&apos;s Free
-            </button>
+    <main className="flex flex-col items-center space-y-16 md:space-y-36 py-10 md:py-32">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 md:grid-cols-2 items-center">
+          <div className="flex flex-col space-y-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              One platform to <span className="text-blue-600">connect</span> and{" "}
+              <span className="text-blue-600">innovate</span>
+            </h1>
+            <p className="text-xl text-gray-600 max-w-lg">
+              Bring teams together, reimagine workplaces, engage new audiences,
+              and delight your customers - all on the Zoom platform you know and
+              love.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#pricing"
+                className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-3 text-lg font-medium text-center transition duration-150 ease-in-out"
+              >
+                Plans & Pricing
+              </a>
+              <a
+                href="#signup"
+                className="text-blue-600 hover:text-blue-800 border border-blue-600 hover:border-blue-800 rounded-full px-8 py-3 text-lg font-medium text-center transition duration-150 ease-in-out"
+              >
+                Sign Up, It&apos;s Free
+              </a>
+            </div>
+          </div>
+          <div className="relative rounded-xl overflow-hidden shadow-2xl">
+            <img
+              src="/woman-desk.jpg"
+              alt="Woman at desk using Zoom"
+              className="w-full h-auto object-cover transition duration-500 transform hover:scale-125"
+            />
           </div>
         </div>
-        <div className="sm:w-1/2 overflow-hidden rounded-2xl">
-          <img
-            className=" w-full h-auto border hover:scale-125 transition-all duration-700 ease-in-out"
-            src="/woman-desk.jpg"
-            alt="zoom-image"
-          />
-        </div>
-      </div>
+      </section>
 
-      <div className="flex flex-col md:flex-row items-center bg-blue-800 rounded-2xl p-6">
-        <div>
-          <img src="/zoom_wheel_big.png" alt="zoom-image" />
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-12">
+            <div className="flex justify-center">
+              <img
+                src="/zoom_wheel_big.png"
+                alt="Zoom features wheel"
+                className="max-w-full h-auto"
+              />
+            </div>
+            <div className="space-y-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Make work, less work
+              </h2>
+              <p className="text-xl opacity-90">
+                Securely connect and collaborate so you can work better
+                together. Simple to manage and delightful to use, Zoom powers
+                the modern workforce.
+              </p>
+              <a
+                href="#possibilities"
+                className="inline-flex items-center bg-white text-blue-600 hover:bg-blue-50 rounded-full px-6 py-3 text-lg font-medium transition duration-150 ease-in-out"
+              >
+                Discover the Possibilities
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="text-blue-300 h-fit">
-          <h1 className=" font-semibold text-2xl p-3">Make work, less work</h1>
-          <p className="text-xl p-3">
-            Securely connect and collaborate so you can work better together.
-            Simple to manage and delightful to use, Zoom powers the modern
-            workforce.
+      </section>
+
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 space-y-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            Powering organizations across industries and geographies
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Zoom helps consolidate communications, connect people, and
+            collaborate better together in the boardroom, classroom, operating
+            room, and everywhere in between.
           </p>
           <a
-            href="#"
-            className="py-2 px-3 hover:text-white border border-blue-300 rounded-2xl"
-          >
-            Discover the Possibilities
-          </a>
-        </div>
-      </div>
-
-      <div className="flex flex-col sm:flex-row justify-between font-open-sans w-full">
-        <div className="flex flex-col justify-center items-center gap-4 mb-4 text-center text-pretty">
-          <h1 className="text-xl font-bold">
-            Powering organizations across industries and geographies
-          </h1>
-          <p className="font-semibold">
-            Zoom helps consolidate communications, connect people,
-            <br /> and collaborate better together in the boardroom, classroom,
-            <br /> operating room, and everywhere in between.
-          </p>
-          <button
-            type="button"
-            href="#"
-            target="_blank"
-            className=" w-fit font-bold text-blue-300 bg-blue-600 border hover:text-white border-blue-600 rounded-2xl text-base py-2 px-6"
+            href="#solutions"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-3 text-lg font-medium transition duration-150 ease-in-out"
           >
             Explore Industry Solutions
-          </button>
+          </a>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 font-xs font-bold md:font-base text-center ">
-          {cards.map((card, index) => {
-            return <Card key={index} icon={card.icon} title={card.title} />;
-          })}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {industryCards.map((card, index) => (
+            <Card key={index} icon={card.icon} title={card.title} />
+          ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
-
-export default App;
