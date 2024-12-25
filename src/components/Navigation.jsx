@@ -47,6 +47,7 @@ export default function Navigation() {
           </div>
           <div className="md:hidden">
             <button
+              type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
             >
