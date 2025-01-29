@@ -16,7 +16,7 @@ export default function Navigation() {
       <div className="container mx-auto py-2 px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <a href="./" className="flex-shrink-0">
+            <a href="./" className="shrink-0">
               <img src="/Zoom_logo.svg" alt="Zoom" className="h-8 w-auto" />
             </a>
             <nav className="hidden lg:ml-10 md:flex flex-row justify-center items-center lg:space-x-8">
@@ -49,7 +49,7 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-gray-500 hover:text-blue-600 focus:outline-hidden focus:text-blue-600"
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (

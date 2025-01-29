@@ -58,7 +58,7 @@ export default function App() {
       </section>
 
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl overflow-hidden">
+        <div className="bg-linear-to-r from-blue-600 to-blue-800 rounded-2xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-12">
             <div className="flex justify-center">
               <img

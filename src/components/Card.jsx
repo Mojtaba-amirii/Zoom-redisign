@@ -3,7 +3,7 @@ export default function Card({ icon, title }) {
     <div className="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
       <div className="p-6">
         <div className="flex items-center space-x-4">
-          <div className="flex-shrink-0 text-blue-600">{icon}</div>
+          <div className="shrink-0 text-blue-600">{icon}</div>
           <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
         </div>
         <p className="mt-4 text-gray-600">
