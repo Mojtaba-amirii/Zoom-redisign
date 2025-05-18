@@ -1,8 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --font-sans: Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-open-sans: 'Open Sans';
+  --font-open-sans: "Open Sans";
   --font-handwriting: Pacifico;
 
   --color-zoom-blue: #0b5cff;
